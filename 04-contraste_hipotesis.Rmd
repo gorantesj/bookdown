@@ -1,0 +1,40 @@
+# Estimar la media o el total de una variable
+# Estimación de un valor poblacional para poblaciones finitas
+
+En ocasiones, el interés esta puesto en describir un valor poblacional específico como la media, el total de una variable, o la varianza.
+
+Aquí se puede introducir los estimadores creados por analogía.
+
+Sesgo
+
+Error medio cuadrado
+
+determinar tamaño de muestra
+
+De parte de la población hay dos valores que juegan un papel en determinar el tamaño de muestra, N, y sigma. 
+
+Con remplazo y sin remplazo.
+
+
+```{r}
+
+```
+
+
+Este mecanismo es muy simple de producir pues basta con cumplir la condición de tener una.
+
+
+
+## Footnotes
+
+Footnotes are put inside the square brackets after a caret `^[]`. Like this one ^[This is a footnote.]. 
+
+## Citations
+
+Reference items in your bibliography file(s) using `@key`.
+
+For example, we are using the **bookdown** package [@R-bookdown] (check out the last code chunk in index.Rmd to see how this citation key was added) in this sample book, which was built on top of R Markdown and **knitr** [@xie2015] (this citation was added manually in an external file book.bib). 
+Note that the `.bib` files need to be listed in the index.Rmd with the YAML `bibliography` key.
+
+
+The RStudio Visual Markdown Editor can also make it easier to insert citations: <https://rstudio.github.io/visual-markdown-editing/#/citations>

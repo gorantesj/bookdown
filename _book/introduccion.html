@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Capítulo 2 Introducción | Elementos del Análisis Estadístico</title>
+  <meta name="description" content="<p>This is a minimal example of using the bookdown package to write a book.
+The HTML output format for this example is bookdown::gitbook,
+set in the _output.yml file.</p>" />
+  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Capítulo 2 Introducción | Elementos del Análisis Estadístico" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="<p>This is a minimal example of using the bookdown package to write a book.
+The HTML output format for this example is bookdown::gitbook,
+set in the _output.yml file.</p>" />
+  <meta name="github-repo" content="rstudio/bookdown-demo" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Capítulo 2 Introducción | Elementos del Análisis Estadístico" />
+  
+  <meta name="twitter:description" content="<p>This is a minimal example of using the bookdown package to write a book.
+The HTML output format for this example is bookdown::gitbook,
+set in the _output.yml file.</p>" />
+  
+
+<meta name="author" content="Manuel Mendoza Ramírez, Gerardo Orantes Jordan" />
+
+
+<meta name="date" content="2021-12-13" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="index.html"/>
+<link rel="next" href="estimacion_puntual.html"/>
+<script src="libs/header-attrs-2.11/header-attrs.js"></script>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Inferencia Estadística</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> url: your book url like <span>https://bookdown.org/yihui/bookdown</span></a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#usage"><i class="fa fa-check"></i><b>1.1</b> Usage</a></li>
+<li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#render-book"><i class="fa fa-check"></i><b>1.2</b> Render book</a></li>
+<li class="chapter" data-level="1.3" data-path="index.html"><a href="index.html#preview-book"><i class="fa fa-check"></i><b>1.3</b> Preview book</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="introduccion.html"><a href="introduccion.html"><i class="fa fa-check"></i><b>2</b> Introducción</a></li>
+<li class="chapter" data-level="3" data-path="estimacion_puntual.html"><a href="estimacion_puntual.html"><i class="fa fa-check"></i><b>3</b> Estimación puntual</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="estimacion_puntual.html"><a href="estimacion_puntual.html#chapters-and-sub-chapters"><i class="fa fa-check"></i><b>3.1</b> Chapters and sub-chapters</a></li>
+<li class="chapter" data-level="3.2" data-path="estimacion_puntual.html"><a href="estimacion_puntual.html#captioned-figures-and-tables"><i class="fa fa-check"></i><b>3.2</b> Captioned figures and tables</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="parts.html"><a href="parts.html"><i class="fa fa-check"></i><b>4</b> Parts</a></li>
+<li class="chapter" data-level="5" data-path="estimar-la-media-o-el-total-de-una-variable.html"><a href="estimar-la-media-o-el-total-de-una-variable.html"><i class="fa fa-check"></i><b>5</b> Estimar la media o el total de una variable</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="estimar-la-media-o-el-total-de-una-variable.html"><a href="estimar-la-media-o-el-total-de-una-variable.html#footnotes"><i class="fa fa-check"></i><b>5.1</b> Footnotes</a></li>
+<li class="chapter" data-level="5.2" data-path="estimar-la-media-o-el-total-de-una-variable.html"><a href="estimar-la-media-o-el-total-de-una-variable.html#citations"><i class="fa fa-check"></i><b>5.2</b> Citations</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="blocks.html"><a href="blocks.html"><i class="fa fa-check"></i><b>6</b> Blocks</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="blocks.html"><a href="blocks.html#equations"><i class="fa fa-check"></i><b>6.1</b> Equations</a></li>
+<li class="chapter" data-level="6.2" data-path="blocks.html"><a href="blocks.html#theorems-and-proofs"><i class="fa fa-check"></i><b>6.2</b> Theorems and proofs</a></li>
+<li class="chapter" data-level="6.3" data-path="blocks.html"><a href="blocks.html#callout-blocks"><i class="fa fa-check"></i><b>6.3</b> Callout blocks</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="sharing-your-book.html"><a href="sharing-your-book.html"><i class="fa fa-check"></i><b>7</b> Sharing your book</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="sharing-your-book.html"><a href="sharing-your-book.html#publishing"><i class="fa fa-check"></i><b>7.1</b> Publishing</a></li>
+<li class="chapter" data-level="7.2" data-path="sharing-your-book.html"><a href="sharing-your-book.html#pages"><i class="fa fa-check"></i><b>7.2</b> 404 pages</a></li>
+<li class="chapter" data-level="7.3" data-path="sharing-your-book.html"><a href="sharing-your-book.html#metadata-for-sharing"><i class="fa fa-check"></i><b>7.3</b> Metadata for sharing</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Elementos del Análisis Estadístico</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="introduccion" class="section level1" number="2">
+<h1><span class="header-section-number">Capítulo 2</span> Introducción</h1>
+[]
+Los procesos de adquisición de conocimiento son diversos, pueden ser extremadamente complejos, e involucran una variedad de mecanismos que se combinan y complementan. Un elemento básico y fundamental del aprendizaje, sin embargo, es la . Desde los tiempos mas remotos, los seres humanos han acumulado conocimiento observando su entorno y, en particular, constatando que algunos eventos se repiten sin cambios cuando se observan los fenómenos de interés.
+De esta manera, la reiteración de patrones y tendencias ha conducido a sugerir, y en ocasiones a dar por ciertas e inmutables, algunas . Así, se han establecido hechos que pasan a formar parte del enorme acervo de conocimiento común.
+Con este principio nuestros ancestros aprendieron que la noche sigue al día y que la falta de agua acaba con los cultivos, por ejemplo. Supieron también de las propiedades de algunos materiales, de los efectos del fuego y de la toxicidad de algunas fuentes de alimento, entre muchos otros ejemplos. La  (a una causa corresponde siempre un mismo efecto) subyace en esta forma de aprendizaje.
+Por supuesto, existe una gran diferencia entre saber que, en determinadas condiciones, siempre se produce el mismo efecto y, en otro nivel, conocer el mecanismo por el cual la causa conduce a ese efecto. Es necesario acceder a otro nivel cognitivo para resolver la segunda cuestión. Este paso equivale a transformar el conocimiento común en lo que se denomina  y debieron transcurrir muchos años antes de que la  se estableciera y desarrollase teorías, modelos y mecanismos para que esa transformación pudiera tener lugar.
+Ahora bien, existe otra clase de fenómenos, más abundantes que los determinísticos y, por tal razón, muy importantes en lo que se refiere al aprendizaje y la adquisición de conocimiento. Estos fenómenos, aun cuando sean observados en las mismas condiciones, no necesariamente producen los mismos resultados. A una misma causa ya no corresponde un efecto único sino toda una colección de efectos posibles. Es mucho más difícil aprender de estos  que de los determinísticos.  de sus resultados produce  y, durante mucho tiempo, los seres humanos enfrentaron ese desasosiego con argumentos que incluían la magia, la fe y la resignación.
+Los ejemplos de fenómenos inciertos surgen lo mismo en el más primitivo ambiente natural que en el sofisticado entorno de la sociedad actual. A un día lluvioso, no necesariamente le seguirá otro en que llueva también. La cantidad de frutos que produce un naranjo cambia de cosecha a cosecha así se cultive con los mismos cuidados. La aplicación de un tratamiento medico no necesariamente tiene el mismo efecto en todos los pacientes y un usuario activo de las redes sociales no reacciona igual que todos los demás frente a un suceso publico. La lista es interminable.
+Una discusión que reviste gran interés es la que procura identificar la fuente de la incertidumbre. ¿Es inherente al fenómeno? ¿Acaso es fruto de la ignorancia del observador, que supone que la observación se produce en las mismas condiciones cuando no es así? La materia da para disquisiciones que actualmente siguen su curso en el campo de la Filosofía. El hecho, es que los fenómenos inciertos existen, se materializan en el entorno cotidiano y, más aun, sus efectos tienen impacto en la vida de los seres humanos. Como consecuencia, y sin dejar de lado el interés por la génesis de la incertidumbre, es necesario contar con herramientas que permitan aprender y obtener conocimiento de esta clase de fenómenos.
+La observación repetida, en el caso determinístico, da paso gradualmente a la certeza de la causalidad y, como ya se ha argumentado, establece la base para el conocimiento común. Esto no ocurre de la misma manera cuando hay multiplicidad de efectos posibles. La observación repetida revela y confirma la  y, por tanto, la incertidumbre. El conocimiento común es de horizontes muy limitados en esas condiciones.
+Es natural que incluso las ideas mas elementales que se utilizan para extraer conocimiento de los fenómenos inciertos sean mas elaboradas que sus contrapartes en un ambiente determinístico y que se hayan desarrollado mucho después, a medida que la noción de conocimiento científico se iba consolidando. De hecho, la , de la que nos ocuparemos en este curso, es una disciplina de carácter científico y juega un papel fundamental en el estudio de fenómenos inciertos provenientes de las mas variadas áreas de conocimiento. Como otras especialidades de la ciencia, la Estadística cuenta con sus propios conceptos, principios, métodos y técnicas y, cuando se entrevera con el estudio de otros campos, da lugar a ramificaciones diversas (Bioestadística, Econometría, Geoestadística y Astroestadística, por ejemplo) que tienen su propio desarrollo, pero retroalimentan al cuerpo principal de conocimiento estadístico.
+En una perspectiva histórica, algunos autores ubican el origen de la Estadística en el siglo XVII, con el trabajo de  (1662) que se ocupo del estudio de la mortalidad en Londres; en particular, del análisis de la edad al morir. A partir de una considerable cantidad de registros parroquiales, propuso la sistematización y el  de la información a través de una tabla de mortalidad, que permite entender algunos de los aspectos más relevantes de este fenómeno. Desde entonces y hasta finales del siglo XIX, el problema de producir conocimiento, a partir de observaciones provenientes de fenómenos inciertos, ha sido objeto de distintos tratamientos y aproximaciones por parte de una variedad de personajes que ocupan lugares prominentes en el desarrollo de la Ciencia. (1655-1705),  (1667-1754),  (1700-1782), (1702-1761), (1749-1827),(1752-1833),  (1777-1855),  (1796-1874), (1821-1894),  (1822-1911) y  (1857-1936) son algunos de ellos.
+En esta lista, con la probable excepción de , ninguno se hace llamar Estadístico. Mas aun, en esa época, los protagonistas del desarrollo de los métodos estadísticos se ocupaban tanto del estudio de fenómenos determinísticos como inciertos y provenían de diversos orígenes profesiones como Abogacía, Medicina, Física, Química, Astronomía, Ingeniera, Biología, Geografía o Sociología.
+Los intereses de estos precursores incluían el estudio de la mecánica celeste, la propagación de las epidemias, la valoración de la evidencia en los juicios, los procesos de la herencia biológica, la efectividad de los fertilizantes en lo cultivos e incluso los precios de los seguros, entre muchos otros más. En su trabajo, un elemento común era el interés en las Matemáticas, una herramienta fundamental para describir los fenómenos de interés.
+A lo largo de esos años, la observación, la medición y la cuantificación de los fenómenos, alcanzó un papel central en el proceso de aprendizaje; especialmente, como parte del mecanismo que permite contrastar modelos y teorías con la realidad que pretenden describir. Este es un elemento clave de lo que se habría de conocer como el .
+En el caso de los fenómenos inciertos, parte fundamental del énfasis se colocó en la . En el proceso, se estableció una primera conexión con el cálculo de probabilidades que ya habían empezado a formalizar Pascal (1623-1662) y Fermat (1607-1665), entre otros.
+, se había desarrollado sobre todo en relación a los juegos de azar. La razón para elegir ese objeto de estudio es, en la actualidad, es muy interesante desde el punto de vista pedagógico. Cada juego suele tener asociada una colección finita de resultados elementales (los efectos) que cuentan con las mismas posibilidades de ocurrir.
+Estos resultados son equiprobables, de manera que la asignación de probabilidad para eventos más complejos se puede realizar calculando el cociente de casos favorables entre casos posibles. Este procedimiento reduce el problema de asignar probabilidades al de enumerar los resultados que hacen posible un determinado evento y, en su momento, dio un gran impulso a lo que ahora se denomina el análisis combinatorio. En estricto sentido, la asignación clásica de probabilidades, en virtud del supuesto de , no requiere la observación del fenómeno.
+Todo el análisis es deductivo y se basa en la razón. Esta herramienta para la medición de la incertidumbre resultó exitosa y fructífera, con diversas ramificaciones. Estas, sin embargo, no fueron susceptibles de aplicarse a la descripción de los fenómenos naturales o sociales en general.
+Entre los obstáculos que se enfrentaron destacan dos, de naturaleza distinta. Por una parte, en el nivel conceptual, utilizar la probabilidad para describir la variabilidad de las observaciones que provienen de los fenómenos naturales presupondría que estas se producen aleatoriamente, con un mecanismo como el que da lugar a los resultados de los juegos de azar. Por otra parte, también sería indispensable suponer que los resultados elementales de estos fenómenos son equiprobables. El primer supuesto dio lugar a notables discusiones con posiciones diferentes y encontradas al respecto. Por su parte, la hipótesis de probabilidades iguales no solo ha resultado insostenible en muchas aplicaciones, sino que, de cumplirse, paradójicamente haría innecesaria la observación del fenómeno.
+Cuando el estudio de la probabilidad abandonó el terreno del racionalismo puro y adoptó un enfoque mas empírico, fue posible considerar fenómenos con resultados no equiprobables. Bajo esta concepción, la probabilidad de un evento A, que puede ocurrir cuando se realiza un experimento, se define como el límite de la frecuencia relativa con que ocurre A, cuando el número de veces que se realiza el experimento (en las mismas condiciones) tiende a infinito.
+Así, el cociente casos posibles entre el número total de casos dio paso al cociente del número de observaciones exitosas entre el total de observaciones; el supuesto de probabilidades iguales se reemplazó por el de la observabilidad del fenómeno, en las mismas condiciones, una cantidad ilimitada de ocasiones. Esta modificación dejó en claro que el estudio de los fenómenos inciertos se puede llevar a cabo a partir de las observaciones que produce y tiene naturaleza inductiva (de la información particular provista por la observación, a las características generales del fenómeno).
+En este punto, si bien no forma parte del temario de este curso (se revisa en el de ), es importante recordar que entre las alternativas para el estudio de los fenómenos inciertos que surgieron antes del Siglo XX, ocupó un lugar destacado la idea de la . Durante los Siglos XVIII y XIX, esta noción cobró creciente importancia. Primero con , pero especialmente con, se estableció esta línea de pensamiento que, retomando la relación causa-efecto, propone que, en el caso de los fenómenos inciertos, una descripción probabilística de los efectos posibles cuando se conoce la causa, combinada con una descripción de la incertidumbre inicial respecto a la causa desconocida, podía dar lugar a una descripción actualizada de la incertidumbre sobre la causa, dada una colección de efectos (datos) observados.
+Ese enfoque establece un mecanismo para llevar a cabo este proceso de aprendizaje. Este se reduce a la, ahora muy conocida, formula de Bayes. Citando al propio Laplace (1774):
+Esta aproximación al estudio de los fenómenos inciertos fue desplazada, al filo del Siglo XX, por las ideas de la Estadística que vamos a revisar en este curso y que se conocen, en su conjunto, como Estadística Frecuentista o Estadística Matemática. Se trata de la escuela de pensamiento dominante durante la mayor parte del siglo pasado; ha sido extraordinariamente eficaz y reúne una variedad de ideas brillantes que surgen de los diferentes problemas específicos que aborda. Establece criterios precisos para evaluar la optimalidad de sus procedimientos y se desarrolla con rigor matemático. En la práctica ha sido muy exitoso, en particular debido a que sus métodos están al alcance de los usuarios a través de una gran cantidad de aplicaciones de cómputo. Por otra parte, es conveniente reconocer que este enfoque también tiene, como es natural, algunas limitaciones que se señalarán oportunamente.
+La Estadística es una disciplina científica que sirve para aprender de los fenómenos inciertos. En prácticamente todos los textos de Estadística se incluye una descripción de lo que los distintos autores entienden por Estadística. Lo mas curioso, quizá, es que sus descripciones tienen un grado de generalidad y una falta de precisión que no corresponden con un texto de aspiraciones científicas. Veamos algunos casos:
+Estas descripciones, lo mismo que las que parecen en muchos otros textos, con diferentes grados de especificidad, proveen elementos para familiarizarse con la disciplina. Dan cuenta de como podría ser considerada, establecen que su materia prima son los datos. Señalan una función de la Estadística. Sin embargo, no la caracterizan, como sería de esperarse de una definición formal. Esta falta de precisión no deja de ser peculiar, especialmente si se toma en cuenta, por un lado, el rigor matemático con que estos textos desarrollan su contenido y, por otra parte, el tiempo que ha transcurrido desde que la Estadística se estableció como un instrumento fundamental para la adquisición de conocimiento científico. De cualquier forma, sea cual sea la causa de esta anomalía, en este curso adoptaremos una definición, formal y precisa, a la que recurriremos constantemente para contrastar las ideas centrales en el desarrollo de los distintos temas:
+Esta caracterización delimita, puntualmente, el ámbito de acción âlos fenómenos que presentan - y, al mismo tiempo, establece el objetivo que se persigue:.
+De esta forma, un procedimiento para el análisis de datos se puede identificar como parte del acervo estadístico si,
+De esta forma, los dos términos clave son  y . Si se cae en la tentación del , se puede sustituir la palabra disciplina en la definición por la de . En el otro extremo, ni ciencia, ni disciplina, sino simplemente un conjunto de técnicas. Una consecuencia de esta definición, es que , idea que se contrapone con la división que algunos viejos textos en la materia establecen cuando separan lo que ellos denominan Estadística Descriptiva de la Inferencia Estadística. La definición es general y aplica para todos las componentes de la disciplina. Antes de iniciar la presentación de las técnicas de que se sirve la Estadística para cumplir su cometido, es pertinente presentar algunas ideas generales
+Cuando se aborda el estudio de un fenómeno, habitualmente esta tarea se acomete con un objetivo específico y con información previa que puede proceder de diversas fuentes. Estos dos elementos determinan el Marco de Referencia de la investigación.
+El tema es relevante porque un fenómeno se puede manifestar en una variedad de formas distintas, pero es precisamente el marco de referencia el que establece los atributos que son de interés en un estudio particular
+Como ejemplo, considere un estudio con el que interesa describir el sistema de salud público del país. Antes de realizar la investigación es muy probable que exista información sobre algunos temas relacionados, proveniente de diversas fuentes y con distintos niveles de calidad. En cuanto a los objetivos, estos pueden ser de naturaleza muy variada. Si el estudio lo patrocina un proveedor internacional de suministros médicos, es posible que el interés se concentre en las oportunidades de negocio que se puedan concretar con el sector. En otro extremo, si el proyecto lo desarrolla una institución académica de investigación, el objetivo podría estar ligado a la eficiencia con que el sector atiende las necesidades de la población.
+Así, en el caso del proveedor, el atributo de interés sería el , mientras que para la investigación académica, el atributo que interesa es la .
+Los atributos son de tipos muy variados y pueden cambiar de un estudio a otro, lo mismo que en una misma investigación, a lo largo del tiempo. Con frecuencia, como en los ejemplos del Potencial y la Eficiencia, se definen en términos conceptuales. Pero aun cuando se refieran a aspectos en apariencia más tangibles, es necesario precisar con detalle la forma en que serán registrados en el estudio. Suponga que en el estudio del sector salud, el atributo de interés es el . Parece un concepto claro, básico, sin embargo, vale la pena considerar las siguientes preguntas: ¿Qué es el tamaño del sector salud?, ¿Cómo se determina? ¿Cómo se puede observar?
+No es difícil reconocer que el tamaño se puede definir cuando se le considera como sector económico o por su cobertura de servicios, entre otras muchas posibilidades. El hecho, es que todo atributo requiere otro nivel con mayor especificidad para definir como se habrá de medir, observar y registrar el fenómeno. Este nuevo nivel de especificidad se conoce con el nombre de .
+Un atributo puede ser registrado a través de una o más variables. En cualquier caso, es conveniente insistir en que, por definición, toda variable es . Esta propiedad permite que los métodos estadísticos sean generales y no particulares de cada investigación.
+Ahora bien, todas las variables son codificaciones numéricas, pero no todas son del mismo tipo. Por ejemplo, si interesa el tamaño del sector salud en términos de su cobertura, una variable podría ser el número de hospitales de tercer nivel en el país; otra posibilidad es el porcentaje de localidades con menos de mil habitantes que cuentan con una clínica de primera atención y una más podría ser una variable que tome el valor uno si el sarampión está erradicado o cero si aun se presentan casos. En todos estos ejemplos el resultado es una codificación numérica pero no todas tienen la misma naturaleza.
+El número de hospitales es una codificación numérica de naturaleza realmente cuantitativa discreta. El porcentaje de localidades es también cuantitativa pero puede considerarse continua. En ambos casos se pueden analizar los valores que producen estas variables utilizando las operaciones aritméticas habituales.
+Por su parte, la variable que se relaciona con el sarampión, si bien emplea códigos numéricos, no representa una cantidad sino una cualidad y no es susceptible de tratarse libremente con las operaciones aritméticas. Los métodos estadísticos reconocen estas diferencias entre las variables y las incorporan en el análisis.
+Vale la pena insistir en que una variable no esta definida sino hasta que establece, por completo, la codificación con que registra el atributo de interés. Como ilustración, cuando se trata de la talla de las personas, la  no es una variable hasta que no se define como y con que unidades de habrá de registrar (en metros y centímetros, en pies y pulgadas, o como un código 0 si no supera un metro y medio, y un código 1 en caso contrario, por ejemplo).
+Finalmente, se tiene la idea de los Datos que siempre se asocian al proceso de observación de los fenómenos.
+<p>De esta forma se establece la secuencia jerárquica: , que se representa en la Figura 1 y resulta vital para el diseño de una investigación, en particular si la investigación es estadística. Es conveniente recordar que la materia de estudio de la Estadística son los fenómenos cuyos resultados presentan variabilidad. Es por esta razón que la observación repetida juega un papel fundamental en la realización de los estudios estadísticos. Si no hubiese variabilidad, una sola observación bastaría para producir la descripción deseada (y establecer la consiguiente relación causa-efecto). Como no es este el caso, el estudio necesariamente requiere la observación repetida que produce una colección de datos (con variabilidad).</p>
+En lo sucesivo, emplearemos letras mayúsculas para referirnos en forma genérica a las variables en el estudio <span class="math inline">\((W,X,...,Z)\)</span> y, en correspondencia, letras minúsculas para los datos que se obtienen al observar cada una de esas variables <span class="math inline">\((w,x,...,z)\)</span>.Así, si se tiene un atributo A, que se registra a través de la variable X, los datos que se obtienen a partir de la observación (repetida n veces) resultan
+<span class="math inline">\(x_{1},x_{2},...,x_{n}\)</span>.
+Volviendo al objetivo del estudio, este es  el fenómeno. Para ello se produce la observación y con el resultado, los datos, se aborda la descripción, tal como se ilustra en la Figura 
+Una vez que el fenómeno se observa a través del atributo <span class="math inline">\(A\)</span>, la descripción se ha de producir necesariamente en referencia a ese atributo. En la misma línea, cuando <span class="math inline">\(A\)</span> se registra mediante la variable <span class="math inline">\(X\)</span>, la tarea de la Estadística es ahora describir esta variable. Finalmente, la información disponible sobre <span class="math inline">\(X\)</span> es la que proveen los datos, así que la descripción del fenómeno, en última instancia, se produce al describir la colección de datos <span class="math inline">\(x_{1},x_{2},...,x_{n}\)</span>.
+Puesto que los datos no son todos iguales, pudiera pensarse que su mejor descripción es simplemente el listado completo de todos ellos. Esta es una posibilidad que puede tener sentido cuando la cantidad de datos es pequeña, pero si <span class="math inline">\(n\)</span> crece, el conjunto de datos eventualmente alcanzara un volumen tal que un examen de los datos, uno por uno, será complicado, con frecuencia, inútil y en un extremo, imposible.
+La solución general que los estadísticos han propuesto para este problema es natural y consiste en la producción de  (gráficos o numéricos) de los datos.
+Por supuesto, esos resúmenes deben capturar las características relevantes para el investigador. Así que, tres ideas que se deben mantener presentes a lo largo de todo el texto son las siguientes:
+En particular, en relación con el tercer apartado, vale la pena anotar que cuando se estudia la disciplina Estadística, como lo haremos en este curso, lo que en realidad se investiga son las ideas, los conceptos, los métodos y las técnicas para producir los mejores resúmenes de los datos, los resúmenes óptimos. Este apunte es relevante porque la Estadística es una disciplina científica y, en consecuencia, el conocimiento que produce debe tener esta calidad, .
+En cada estudio particular es posible que se puedan producir distintos resúmenes; unos buenos, otros mediocres y algunos otros, muy pobres. Si, como ejemplo, es de interés la talla (atributo) de los 560 estudiantes varones de licenciatura en una universidad, y la variable que se registra en cada uno de ellos es la estatura, en metros y centímetros, es razonable suponer que los 560 datos presentarán variabilidad (se trata de un estudio estadístico). También es claro que un resumen posible de estos datos, es la media (la estatura promedio). Sin embargo, no es automático que este resumen sea el mejor. Si el estudio se realiza para decidir sobre la pertinencia de organizar un equipo de baloncesto que represente al programa, seguramente, un resumen mas útil sería la fracción de estudiantes que superan el 1.90 metros de estatura.
+El objetivo de la Estadística en esta materia es producir, en cada caso, los resúmenes óptimos. Por supuesto, para asegurar que un resumen es el mejor, será indispensable establecer criterios para evaluarlos y, además, será necesario tomar en cuenta, tanto la naturaleza de las variables que se analizan, como los objetivos del estudio. En general, se puede afirmar que los mejores resúmenes serán los que, en el menor volumen, conserven toda la información relevante. Los que tengan la mayor capacidad de síntesis, sin perder información valiosa. Utilizando los términos técnicos que se precisaran mas adelante, los mejores resúmenes son los  y .
+Como ya se estableció, toda la Estadística es descriptiva y la descripción que produce se realiza a partir de los datos. Ahora bien, existen dos casos que es extraordinariamente importante distinguir.
+Por una parte, en algunos estudios es posible acceder a todos los datos que el fenómeno puede producir. En el lenguaje estadístico, se dice que se cuenta con un Censo o que se observó la Población de Interés en su totalidad.
+Los ejemplos mas obvios de este tipo son precisamente los Censos de Población y los Censos Económicos que periódicamente se realizan en las diferentes naciones y por medio de los cuales, en los primeros, se registra el sexo, la edad y otras características de  y cada uno de los habitantes del país. En los censos económicos, por su parte, se obtiene información de  las unidades económicas del país sobre su giro, su producción y sus ventas, entre otros aspectos. Los censos de población y económicos son estudios enormes, pero existen otros ejemplos de alcance mucho menor, en los que no solo es posible sino forzoso realizar un censo. Cuando una empresa está evaluando sus pasivos contingentes, en particular sus pasivos laborales, como parte del estudio recabará información de  sus empleados. Así, registrará las edades, los salarios y los años de antigÃŒedad, para todos sus empleados, sin importar su número.
+En cualquier caso, cuando se lleva a cabo un censo, y por tanto, se tiene la información completa sobre el fenómeno de interés, la descripción que se produce de los datos equivale a una  del fenómeno. Por supuesto, habrá sido necesario elegir los resúmenes óptimos, atendiendo a los objetivos del estudio y a la naturaleza de las variables que se registran pero, una vez con ellos, la descripción que se produce es un reflejo fiel del fenómeno y el estudio finaliza.
+Las técnicas estadísticas que se aplican en estas circunstancias constituyen la primera de las dos vertientes a las que se refiere el título de esta sección, se agrupan bajo la denominación general de Análisis Exploratorio de Datos y se presentan en una diversidad de textos. Una referencia clásica es el libro de Tukey (1977), si bien existen libros más recientes que hacen uso de los recursos modernos de cómputo. El tema es de gran interés y de suma utilidad. Sin embargo, no es el objeto de estudio en este curso.
+
+El otro tipo de estudio, cuando se trata de un análisis estadístico, que entraña aun más retos y del que nos vamos a ocupar en lo que resta de este curso, ocurre cuando no es posible recolectar todos los datos que puede producir el fenómeno de interés. Las causas que impiden observar todos los datos pueden ser de lo mas variadas. El costo puede ser un factor.
+Imagine que un partido político esta interesado en conocer las preferencias electorales en una localidad como la Ciudad de México, que en 2018 contaba con mas de 7.5 millones de electores registrados. Convocar a todos esos ciudadanos para que expresen sus preferencias, equivale a organizar una votación completa, un ejercicio extremadamente costoso. Lo habitual, en estos casos, es entrevistar a unos pocos centenares de electores y utilizar sus opiniones como un referente de lo que opina la totalidad de los electores. En este punto, vale la pena introducir otra definición.
+Otro ejemplo, en el terreno farmacéutico, en el que no tiene sentido considerar un censo, se presenta cuando se ensayan medicamentos nuevos. Suponga que se tiene una nuevo tratamiento contra la influenza y se desea valorar el efecto que tiene en personas adultas, de origen hispánico, con síntomas claros del padecimiento, que no presenten otra enfermedad concurrente.
+El problema es que, al momento del estudio (sea este cual sea), el grupo completo de los individuos que forman la población de interés no se encuentra al alcance del estudio. No solamente es inviable incluir a todas las personas que tengan ese perfil en el país (o en el planeta), sino que habrá personas que cumplan los requisitos en el futuro pero que, en ese momento, todavía no existen. En estas condiciones, un censo es imposible. Una alternativa es probar el tratamiento en un grupo reducido de personas (la ), con la idea de que los resultados se puedan hacer extensivos a todos los pacientes de su tipo, actuales o futuros.
+En el área de control de calidad también se presentan problemas de este tipo. En términos simples, el control de calidad es un proceso que se aplica a un producto con el objetivo de establecer si cumple con una serie de especificaciones (de calidad).
+Suponga que en una industria se fabrican tabletas electrónicas que se comercializan con la garanta de que, bajo ciertas condiciones ambientales, se mantienen operando sin fallas, por al menos 100 horas continuas. En este caso, el control de calidad tiene, entre otros objetivos, la misión de verificar que el porcentaje de productos que no alcanzan ese estándar es tan pequeño que las pérdidas por incumplimiento de la garanta representan un riesgo aceptable. Para determinar si una tableta cumple con la norma, es necesario mantenerla en funcionamiento, en las condiciones prescritas, hasta que falle o alcance el límite de las 100 horas.
+El asunto es que, sea cual sea el resultado, esa tableta, una vez que se sometió a la prueba de calidad, ya no es comercializable. La prueba es  y, por supuesto, en ningún caso un fabricante estará dispuesto a destruir la  de su producción, ni siquiera si cree que, al final, todas las tabletas habrán superado la prueba satisfactoriamente.
+En la práctica, las pruebas de control de calidad son indispensables y para obtener datos, la prueba se aplica solamente a una muy pequeña fracción de la producción completa (de nuevo una muestra) y los resultados se utilizan para describir a la totalidad de las tabletas producidas o por producir.
+Otros casos, donde la observación destructiva ocurre cotidianamente, se presentan en Medicina. Como ilustración, considere los exámenes de sangre. Cuando un médico le solicita a una persona que se practique una prueba de química sanguínea, lo que busca son datos que le permitan describir el funcionamiento del organismo de su paciente. Los resultados de un examen de este tipo suelen incluir información sobre la densidad de eritrocitos, leucocitos y plaquetas. Con frecuencia reportan también concentraciones de glucosa, lípidos y triglicéridos entre otros elementos.
+Como sabe todo aquel que ha pasado por estas experiencia, para obtener estas mediciones no se realiza un censo. No se extrae toda la sangre (entre cuatro y cinco litros) del paciente sino que se obtiene solo una muestra (habitualmente de no mas de unos pocos mililitros.
+En resumen, entre las causas que impiden la realización de los censos se encuentran su costo, la inaccesibilidad de la población de interés y la destrucción de los elementos que son objeto de la observación.
+Podríamos continuar con una larga lista de estudios en los que la idea de realizar un censo para describir el fenómeno de interés es inaceptable. Sin embargo, con los ejemplos a la mano ya es posible concluir que, aun cuando no sea posible un censo, la necesidad de describir los fenómenos inciertos correspondientes permanece y, por tanto, el reto de la Estadística en este caso es diseñar métodos y técnicas para producir la descripción que interesa con la  que ofrece una muestra. En otras palabras, la disciplina debe contar con la capacidad para describir fenómenos en lo general, a partir de colecciones de datos parciales. Las técnicas, métodos y procedimientos que se ocupan de este problema se agrupan bajo la denominación de , cuyo estudio será nuestro centro de atención este semestre.
+Antes de abordar sus procedimientos específicos, vale la pena establecer algunas ideas generales que caracterizan a la Inferencia Estadística. Como en cualquier otro caso, cuando se han definido los resúmenes óptimos para el problema particular, estos pueden ser utilizados para describir la muestra a la que se tiene acceso y, de acuerdo con el Análisis Exploratorio de Datos, la descripción que producen será .
+El objetivo, sin embargo, no es describir la muestra sino describir la población completa (el fenómeno en su totalidad) a partir de la información comprendida en la muestra. Así que el siguiente paso es fundamental y consiste en extrapolar la descripción de la muestra para describir la población completa. En este punto es evidente la mas importante diferencia de la Inferencia Estadística con el Análisis Exploratorio de Datos: Sin importar la forma en que se haya seleccionado la muestra ni el mecanismo concreto de extrapolación, la descripción de la población es, en el mejor de los casos, aproximada.
+Por ejemplo, en el caso del estudio de preferencias realizado por el partido político, si el 27% de los electores en la muestra declara que votaría por el partido, ese porcentaje describe  lo que manifiestan las personas en la muestra. Sin embargo, si ese porcentaje se utiliza para describir las preferencias de  los electores, es necesario reconocer que, aun si la muestra refleja razonablemente lo que ocurre en el conjunto de todos los electores, solamente se puede decir que  el 27% de los electores en la población piensa votar por el partido.
+De esta manera, la diferencia fundamental entre las dos vertientes de la Estadística (Análisis Exploratorio de Datos e Inferencia Estadística) radica en el hecho de que la descripción que producen de los fenómenos es, en el primer caso, exacta y en el segundo, solamente aproximada.
+Y el asunto no para ahí. Reconocer que la descripción es aproximada es de la mayor importancia pero resulta irrelevante en la práctica, si no es posible contar con una idea razonable y útil del grado de aproximación que implica.
+¿Qué significa la afirmación de que aproximadamente el 27% de los electores piensa votar por el partido? En la población completa, ese porcentaje ¿Se encuentra entre 25% y 29%? ¿Entre 4% y 50%? y, de ser correcto alguno de estos casos ¿Qué tan seguros podemos estar de ello?
+Así, un primer reto específico de la Inferencia consiste en medir, en cuantificar, el grado de aproximación que tienen las descripciones que produce. Una idea que aparece de forma natural en relación con este desafío, es la noción, , de que la aproximación será mejor en la medida en que la muestra refleje mejor lo que ocurre en la población. De hecho, si la muestra fuese una reproducción exacta, a pequeña escala, de la población completa, entonces la descripción resultaría también exacta. A una muestra con esa propiedad ideal se le denomina .
+De este razonamiento impecable, surge una quimera. Todo investigador enfrentado a un problema de inferencia quisiera contar con muestras representativas. Y es un desvarío, porque la única forma de asegurar que una muestra es representativa, requiere el conocimiento de la población completa, en cuyo caso el problema de inferencia simplemente se desvanecería. Así que las muestras representativas, deseables sin duda,  y anunciar que un estudio se realiza con una muestra representativa es un despropósito.
+No obstante, durante algún tiempo la selección de la muestra se llevaba a cabo con la asesoría de expertos, conocedores de algunos rasgos generales de la población de interés que, con esa información, seleccionaban muestras, con aspiraciones de representatividad.
+Esta práctica tenía, y tiene, al menos dos inconvenientes. Por una parte, no garantiza la reproducibilidad del estudio. Dos expertos pueden diseñar muestras distintas y no hay forma de establecer si las diferencias entre los resultados correspondientes son reconciliables. El segundo inconveniente, que se relaciona con el primero, es que con una muestra  sigue sin respuesta el problema de medir el grado de aproximación de la inferencia que se produce.
+Por supuesto, existen ejemplos donde un experto seleccionó una muestra que fue tratada como representativa y condujo a resultados con un nivel de aproximación (verificada ) extraordinario. Desafortunadamente, los casos en que se puede realizar esa verificación , son la excepción y, peor aun, lo deseable es contar con una buena opinión acerca de la calidad de la muestra antes de realizar el estudio, no después.
+De cualquier manera, recurrir a un experto por eficaz y confiable que sea, no es una alternativa recomendable para acumular los datos que darán lugar a una pieza de conocimiento científico. Depender de una persona específica para producir resultados, además de contravenir la idea de reproducibilidad que ya se ha mencionado, introduce un factor de fragilidad indeseable.
+Para fortuna de los usuarios de los métodos estadísticos, los retos que, de origen, entraña la inferencia fueron razonablemente resueltos en las primeras décadas del siglo XX y, más aun, el procedimiento propuesto provee una solución, simultánea, al tema de la selección de la muestra y al de la medición del grado de la aproximación en la inferencia.
+Es conveniente reconocer que, a lo largo del tiempo, una gran cantidad de estadísticos contribuyeron a la solución definitiva y que, en alguna forma, el asunto quedo zanjado en 1934, tras la publicación del artículo de Jerzy Neyman que se considera un hito en el tema. El título resulta evocador cuando se conoce el problema: .
+La solución consiste en seleccionar la muestra por sorteo o, en un lenguaje mas técnico, en utilizar un procedimiento de . Las consecuencias de esta idea, tanto conceptuales, técnicas y prácticas, son extraordinarias y, en buena parte, serán nuestro principal objeto de estudio. La versión mas sencilla del muestreo por sorteo se puede describir muy fácilmente.
+Suponga que el conjunto completo de todas las observaciones que puede producir un fenómeno es finito, pero muy grande, de tal forma que hace inviable la realización de un censo. Si de ese conjunto que, digamos, consta de <span class="math inline">\(N\)</span> elementos, se desea seleccionar una muestra de tamaño <span class="math inline">\(n\)</span> (<span class="math inline">\(n &lt;&lt; N\)</span>) se procede como sigue:
+El mecanismo equivale a un experimento aleatorio a través del que se obtiene una muestra de tamaño <span class="math inline">\(n\)</span> sin reemplazo, de elementos en la población. La información de interés se obtiene al realizar la observación de la variable <span class="math inline">\(X\)</span>, en cada uno de los elementos seleccionados, lo que dará origen a la colección de datos <span class="math inline">\(x_1,x_2,...,x_n\)</span>.
+Una primera consideración, que conceptualmente es de la mayor importancia, es que bajo este esquema no es necesario suponer que el fenómeno bajo estudio produce sus observaciones en forma aleatoria. Los datos presentan variabilidad, como ya se ha discutido, pero la aleatoriedad es debida a, y garantizada por, el mecanismo de selección de la muestra. De hecho, a una muestra de este tipo se le denomina una . El resultado es fundamental puesto que la naturaleza aleatoria de las observaciones está garantizada, es independiente del fenómeno y el empleo de la probabilidad para describirlas es inmediato.
+Un segundo aspecto no menos relevante tiene que ver con la relación que guardan las muestras aleatorias con la idea de representatividad de la muestra. Como ya hemos comentado, no es posible afirmar que una muestra es representativa a menos que se conozca la población completa.
+Ni siquiera en el caso del muestreo probabilístico se puede decir que las muestras que produce sean representativas. Sin embargo, con este algoritmo cada elemento de la población tiene la misma probabilidad de ser incluido en la muestra y, como consecuencia, los valores de <span class="math inline">\(X\)</span> mas frecuentes en la población serán necesariamente los mas probables en la muestra. Es decir,  es que la muestra resulte parecida a la población. En otras palabras, no hay garantía, pero lo más probable es que la muestra se aproxime a la quimera de la representatividad.
+Por otra parte, el mecanismo es reproducible y exógeno; no existe la posibilidad de un sesgo deliberado en la selección de la muestra. Ya que en cada paso de la selección de la muestra se realiza un experimento aleatorio, el dato correspondiente al  paso,<span class="math inline">\(x_i\)</span>, se puede considerar la realización de una variable aleatoria <span class="math inline">\(X_i\)</span> para <span class="math inline">\(i\)</span>= 1,2,âŠ,<span class="math inline">\(n\)</span>. Más aun, puesto que <span class="math inline">\(n\)</span> cumple la condición <span class="math inline">\(n &lt;&lt; N\)</span>, es razonable suponer que el contenido de la urna no cambia tras cada extracción y entonces, las variables <span class="math inline">\(X_1,X_2,...,X_n\)</span> son independientes e idénticamente distribuidas.
+Equivalentemente, se puede suponer que los datos, <span class="math inline">\(\underline{x}_{(n)}=\{x_1,x_2,...,x_n\}\)</span> son el resultado de observar <span class="math inline">\(n\)</span> realizaciones independientes <span class="math inline">\(\underline{X}_{(n)}=\{X_1,X_2,...,X_n\}\)</span> de una misma variable aleatoria <span class="math inline">\(X\)</span>.
+En efecto, a partir de ahora se adoptará la siguiente
+Esta formulación tiene efectos muy importantes en el proceso de inferencia. Originalmente, la investigación tiene como propósito describir el fenómeno de interés. En cuanto se fija el atributo a través del cual se va a registrar el fenómeno, el objetivo es describir el atributo. En el siguiente nivel, una vez que se define la variable que precisa el atributo, la descripción que se persigue es la de esa variable. Si fuese posible realizar un censo, se conocerían todos los datos que la observación de la variable puede producir y con ellos se alcanzara la meta.
+En nuestro caso, de muestreo probabilístico, solamente tenemos acceso a una muestra aleatoria de la variable aleatoria <span class="math inline">\(X\)</span>. Así, entonces, a partir de la información muestral, es necesario producir una descripción (aproximada) de todos los datos que <span class="math inline">\(X\)</span> puede producir.
+Se busca una descripción de los valores distintos que puede tomar la variable y de la frecuencia con que se presentan en la población. En términos técnicos, interesa describir el soporte de <span class="math inline">\(X\)</span> y la probabilidad con que produce cada uno de los valores en ese soporte. En resumen, el objetivo del estudio se reduce a describir la 
+El objetivo es mas específico, pero no mas simple; determinar la distribución de una variable aleatoria a partir de un puñado de observaciones es un problema complejo. El conjunto <span class="math inline">\(\mathcal{F}\)</span> de todas las funciones de distribución cuenta no solo con un numero infinito de elementos, sino que es de dimensión infinita. Se trata de la colección de todas funciones que satisfacen las condiciones:
+
+Seleccionar una función <span class="math inline">\(F\)</span> en <span class="math inline">\(\mathcal{F}\)</span>, a partir de los datos en la muestra, que constituya la descripción óptima del fenómeno de interés representa un reto formidable. Además de requerir un criterio de optimalidad, que en cualquier caso habría que proponer, la búsqueda del óptimo en un espacio de dimensión infinita dista de ser trivial.
+Una alternativa que reduce conceptual y cualitativamente esta dificultad, consiste en considerar, no el conjunto de todas las funciones de distribución, sino un subconjunto suficientemente grande como para que la descripción que se obtenga sea razonable, pero tal que la optimización se pueda llevar a cabo con herramientas matemáticas relativamente simples.
+La idea es recurrir a una familia paramétrica <span class="math inline">\(\mathcal{F}_{\theta}\)</span>de modelos de probabilidad. En este caso, se considera que la función de distribución que interesa,<span class="math inline">\(F(X)\)</span>, pertenece a un conjunto de la forma
+donde, para cada valor de <span class="math inline">\(\theta\)</span> fijo, la distribución <span class="math inline">\(F(x)=(x;\theta)\)</span> es totalmente conocida. <span class="math inline">\(\theta\)</span> se conoce como el parámetro de la familia y es un índice que identifica de manera inequívoca a cada elemento en <span class="math inline">\(\mathcal{F}_{\theta}\)</span>.
+En esta formulación, la determinación de la función de distribución óptima se reduce a la determinación del parámetro óptimo. Si el espacio paramétrico <span class="math inline">\(\Theta\)</span> es un subconjunto del espacio <span class="math inline">\(\mathbb{R}^k\)</span> con <span class="math inline">\(k\)</span> fijo, el problema es uno de optimización en <span class="math inline">\(\mathbb{R}^k\)</span> que se puede abordar, una vez seleccionado el criterio de comparación, con los recursos habituales del cálculo.
+En la literatura es posible encontrar una variedad de familias paramétricas de funciones de distribución, que pueden utilizarse en el proceso de inferencia que aquí se discute. También es posible definir nuevas familias paramétricas con características que se consideren propicias para describir un tipo específico de datos. En todo caso, es importante insistir en que la elección de una familia paramétrica se produce con el objetivo de simplificar la tarea de describir el fenómeno de interés y necesariamente, implica el empleo de un modelo particular, con restricciones y limitantes que debe elegirse con cuidado.
+Para seleccionar la familia paramétrica se considera la definición de la variable (¿Cuál es su soporte?, ¿Toma valores en un conjunto finito, numerable o potencialmente en un continuo?), el marco de referencia (¿La teoría o el conocimiento previo sugieren algún comportamiento particular de los datos, como simetrías?) y, por supuesto, el análisis estadístico de muestras preliminares o provenientes de estudios similares.
+En lo que resta de este curso se partirá del supuesto de que la familia paramétrica <span class="math inline">\(\mathcal{F}_{\theta}\)</span> ya ha sido seleccionada y nos concentraremos en el problema remanente de producir inferencias sobre el valor del parámetro desconocido. Esta es el tema de que nos ocuparemos en los siguientes meses: La .
+El material que sigue tiene la estructura habitual de los libros de Inferencia Estadística Paramétrica y se desarrollará de acuerdo a una escuela de pensamiento estadístico particular cuyas bases se desarrollaron en los primeros treinta años del siglo XX.
+Se trata de la escuela  que debe su nombre a la interpretación que utiliza de la probabilidad. Es un enfoque muy exitoso y dominó por completo el panorama estadístico por mas de 50 años. Sigue siendo uno de los dos paradigmas mas importantes en la Estadística si bien ahora comparte el escenario con el Análisis Estadístico Bayesiano que se revisa en otro curso.
+En cualquier caso, las ideas, conceptos, técnicas y métodos que se revisarán en el resto del curso tienen, como ya se ha indicado, el propósito de revisar el tema de la inferencia sobre el parámetro <span class="math inline">\(\theta\)</span> Si se tiene una buena idea (aproximada) del valor del parámetro del modelo, se tendrá una idea (aproximada también) de la función de distribución de la variable que dio origen a los datos. En términos de inferencia interesa, en particular, proveer respuestas a las siguientes preguntas:
+
+Para dar respuesta a la primera pregunta, nos ocuparemos de las técnicas de ; para la segunda recurriremos a las técnicas de  y la tercera la abordaremos en el apartado de . Iniciaremos con el apartado de Estimación Puntual.
+<p><em>colocar lista de ejercicios aquí</em></p>
+
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="estimacion_puntual.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/USERNAME/REPO/edit/BRANCH/01-intro.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["_main.pdf", "_main.epub"],
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
